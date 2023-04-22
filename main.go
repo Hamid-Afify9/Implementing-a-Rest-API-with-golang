@@ -65,7 +65,9 @@ func toggleStatus(c *gin.Context){
 	}
 	todo.Completed =!todo.Completed
 	c.IndentedJSON(http.StatusOK, *todo)
+
 }
+
 
 func main() {
 
